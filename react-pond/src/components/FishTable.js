@@ -1,9 +1,9 @@
-var FishTable = () => (
+var FishTable = ({fishData}) => (
   <table>
     <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
+      <FishTableRow fishData={fishData[0]}/>
+      <FishTableRow fishData={fishData[1]}/>
+      <FishTableRow fishData={fishData[2]}/>
     </tbody>
   </table>
 );
